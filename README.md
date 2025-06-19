@@ -59,14 +59,6 @@ Lista todos os produtos cadastrados.
 
 ---
 
-## Segurança
-
-- **Nunca envie seu banco de dados de produção publicamente** (principalmente se contiver dados sensíveis ou reais).
-- O arquivo `database.db` pode ser enviado para facilitar testes, mas lembre-se de que qualquer pessoa poderá acessar os dados contidos nele.
-- **Defina sempre `DEBUG_MODE=False` em produção**. O modo debug pode expor informações sensíveis e permitir execução de código malicioso em caso de erro.
-- Considere adicionar autenticação se a API for exposta publicamente.
-- Use variáveis de ambiente para senhas e configurações sensíveis.
-
 ### Exemplo de configuração segura no `.env`:
 ```env
 DEBUG_MODE=False
